@@ -27,4 +27,4 @@ spec:
           cloud-provider: aws
         name: '{{ ds.meta_data.local_hostname }}'
   replicas: 1
-  version: 1.18.2
+  version: v1.18.2
