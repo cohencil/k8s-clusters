@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - aws-cluster.yml
+  - aws-machine-template.yml
+  - cluster.yml
+  - kubeadm-config-template.yml
+  - kubeadm-control-plane.yml
+  - machine-deployment.yml

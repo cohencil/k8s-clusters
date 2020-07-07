@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: dev-cluster
+  namespace: argocd
+  labels:
+    group: dev
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/cohencil/k8s-clusters.git
+    path: overlays/dev
+    targetRevision: master
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated: {}
