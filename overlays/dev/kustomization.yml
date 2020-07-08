@@ -14,3 +14,8 @@ resources:
 
 patchesStrategicMerge:
   - aws-cluster.yml
+  - aws-machine-template.yml
+  - cluster.yml
+  - kubeadm-config-template.yml
+  - kubeadm-control-plane.yml
+  - machine-deployment.yml
