@@ -12,5 +12,5 @@ commonAnnotations:
 resources:
   - ../../base
 
-#patchesStrategicMerge:
-#  -
+patchesStrategicMerge:
+  - aws-cluster.yml
